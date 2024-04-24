@@ -1,0 +1,37 @@
+{% extends "myformsapp/base.html" %}
+
+{% block catalogo %}
+{% load static %}
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Bienvenidee :D</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <section>
+            "¡Bienvenidos a nuestra plataforma textil innovadora! Únete a la revolución de la moda sostenible y el reciclaje. Descubre nuestras exclusivas creaciones que combinan estilo y conciencia ambiental. ¡Explora y sé parte del cambio!"
+          </section>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okey</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      {% for image in images %}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <img src="{% static 'css/img/' %}{{ image }}" class="d-block w-100" alt="{{ image }}">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  
+
+
+{% endblock %}
