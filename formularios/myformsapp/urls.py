@@ -9,7 +9,7 @@ urlpatterns = [
     path('formularioContacto/', views.Fcontacto, name='formularioContacto'),
     path('Contacto/', views.Mcontacto),
     path('inicio/', views.Inicio, name='Inicio'),
-    path('catalogo/', views.Catologo, name='Catalogo'),
+    path('catalogo/', views.Catalogo, name='Catalogo'),
     path('admin/', admin.site.urls),
 ]
 
