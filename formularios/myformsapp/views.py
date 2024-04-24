@@ -8,7 +8,7 @@ def Cuerpo(request):
 def Inicio(request):
     return render(request, 'myformsapp/inicio.html')
 
-def Catologo(request):
+def Catalogo(request):
     return render(request, 'myformsapp/catalogo.html')
 
 def Fcontacto(request):
